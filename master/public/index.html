@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet"></link>
+    <title>Getting data</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="dropdown" data-dropdown>
+        <button class="link" data-dropdown-button>File Select</button>
+        <div class="dropdown-menu info-grid">
+          <div>
+            <div class="dropdown-heading">File 1</div>
+            <div class="dropdown-links">
+
+              <a href="#" class="link" onclick="return funcClick()">cmots</a>
+              <a href="#" class="link" onclick="return funcClickTwo()">orderForm</a>
+              <a href="#" class="link" onclick="return funcClickThree()">orderReport</a>
+              <a href="#" class="link" onclick="return funcClickFour()">stockInfo</a>
+            </div>
+          </div>
+          <div>
+            <div class="dropdown-heading">File 2</div>
+            <div class="dropdown-links">
+              <a href="#" class="link" onclick="return funcClickFive()">cmots</a>
+              <a href="#" class="link" onclick="return funcClickSix()">orderForm</a>
+              <a href="#" class="link" onclick="return funcClickSeven()">orderReport</a>
+              <a href="#" class="link" onclick="return funcClickEight()">stockInfo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <h1>Printing logs</h2>
+
+  <h2 id='one'></h2>
+    <script src="/socket.io/socket.io.js"></script>
+  <script src='script.js'></script>
+  </body>
+</html>
